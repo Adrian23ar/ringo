@@ -1,0 +1,49 @@
+/* src/main.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --text: #2D2D2D;                     /* Gris oscuro para texto en modo claro */
+    --background: #f3f3f3;                /* Gris muy claro para fondo en modo claro */
+    --primary: #007ACC;                   /* Azul estándar como primario (ej. botones, enlaces generales) */
+    /* --secondary: #FDB913; */          /* Amarillo/Dorado del logo - COMENTADO O CAMBIADO */
+    --secondary: #E0E0E0;                 /* NUEVO: Gris claro/medio como secundario (para fondos de tarjetas/secciones) */
+    --accent: #00AEEF;                    /* Azul cian/turquesa del icono del logo como acento principal */
+  }
+  .dark {
+    --text: #EAEAEA;                     /* Gris claro para texto en modo oscuro */
+    --background: #1A1A1A;                /* Gris muy oscuro para fondo en modo oscuro */
+    --primary: #008AE6;                   /* Azul un poco más brillante para modo oscuro */
+    /* --secondary: #FCC43B; */          /* Amarillo/Dorado - COMENTADO O CAMBIADO */
+    --secondary: #3A3A3A;                 /* NUEVO: Gris oscuro como secundario en modo oscuro */
+    --accent: #1BC5FF;                    /* Cian/turquesa un poco más brillante para modo oscuro */
+  }
+
+  body {
+    @apply bg-background text-text transition-colors duration-300;
+  }
+
+  .phone {
+    text-decoration: none;
+    position: relative;
+    /* Para posicionar el borde con posición absoluta */
+  }
+  
+  .phone::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 7px;
+    width: 0;
+    height: 3px;
+    background-color: var(--accent);
+    transition: width 0.2s ease-in-out;
+  }
+  
+  .phone:hover::after {
+    width: 97%;
+    /* El borde se expande */
+  }
+}
