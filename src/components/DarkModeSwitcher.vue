@@ -9,8 +9,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import { SunIcon, MoonIcon } from '@heroicons/vue/24/outline'; // O /24/solid
-
+import { SunIcon, MoonIcon } from '@heroicons/vue/24/outline';
 const isDarkMode = ref(false);
 
 const toggleDarkMode = () => {

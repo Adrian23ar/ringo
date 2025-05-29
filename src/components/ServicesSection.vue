@@ -1,5 +1,5 @@
 <template>
-  <section id="servicios" class="py-16 bg-background transition-all scroll-mt-20">
+  <section id="servicios" class="py-16 bg-background-alt transition-all scroll-mt-20">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12 md:mb-16">
         <h2 class="text-3xl sm:text-4xl font-extrabold text-primary mb-4">
@@ -15,13 +15,13 @@
         <div v-for="(service) in services" :key="service.title"
           :class="[
             'rounded-xl shadow-lg overflow-hidden flex flex-col transition-all duration-300 hover:scale-[1.01] hover:shadow-xl col-span-1']">
-          <div class="relative p-6 text-white min-h-[180px] md:min-h-[200px] flex flex-col justify-end">
+          <div class="relative p-3 text-white min-h-[180px] md:min-h-[200px] flex flex-col justify-end">
             <img :src="service.imageUrl" :alt="service.title" class="absolute inset-0 w-full h-full object-cover"
               loading="lazy" />
             <div :class="['absolute inset-0', service.headerGradientClass]"></div>
             <div class="relative z-10 text-center h-full content-center">
-              <h3 class="text-2xl font-bold mb-1 drop-shadow-lg">{{ service.title }}</h3>
-              <p class="text-sm md:text-base opacity-90 drop-shadow-md">{{ service.description }}</p>
+              <h3 class="text-2xl md:text-3xl lg:text-xl xl:text-2xl font-bold mb-1 drop-shadow-lg">{{ service.title }}</h3>
+              <p class="text-sm md:text-base xl:text-base opacity-90 drop-shadow-md">{{ service.description }}</p>
             </div>
           </div>
 
@@ -36,7 +36,7 @@
             <div class="mt-auto">
               <a :href="whatsappServiceLink(service.title)" target="_blank" :class="[
                 'inline-flex items-center justify-center w-full text-sm text-white font-semibold py-3 px-4 rounded-md shadow-md transition-colors duration-300',
-                service.buttonColor // Clase para el color del botón
+                service.buttonColor
               ]">
                 Consultar Servicio
                 <ArrowRightIcon class="w-4 h-4 ml-2" />

@@ -3,6 +3,7 @@
     <Navbar />
     <main class="flex-grow">
       <HeroSection />
+      <DiagnosticTool />
       <ServicesSection />
       <BrandsSection />
       <ContactSection />
@@ -14,6 +15,7 @@
 <script setup>
 import Navbar from './components/Navbar.vue';
 import HeroSection from './components/HeroSection.vue';
+import DiagnosticTool from './components/DiagnosticTool.vue';
 import ServicesSection from './components/ServicesSection.vue';
 import BrandsSection from './components/BrandsSection.vue';
 import ContactSection from './components/ContactSection.vue';

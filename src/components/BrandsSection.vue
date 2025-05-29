@@ -6,23 +6,21 @@
                     Trabajamos con Diversas Marcas
                 </h2>
                 <p class="text-lg text-text max-w-2xl mx-auto">
-                    Contamos con experiencia en una amplia gama de marcas líderes en el mercado de electrodomésticos y
-                    refrigeración.
+                    Contamos con experiencia en una amplia gama de marcas líderes en el mercado.
                 </p>
             </div>
 
-            <div
-                class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 md:gap-8 items-center">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-6 md:gap-8 items-center">
                 <div v-for="brand in brands" :key="brand.name"
-                    class="p-4 bg-background dark:bg-zinc-300 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 flex justify-center items-center aspect-video transform hover:scale-105"
+                    class="p-4 bg-white dark:bg-slate-200 rounded-lg shadow-md hover:shadow-xl dark:hover:bg-slate-100 transition-all duration-300 flex justify-center items-center aspect-video transform hover:scale-105"
                     :title="brand.name">
-                    <img :src="brand.logoUrl" :alt="brand.name" class="max-h-16 min-h-16 md:min-h-20 md:max-h-20 object-contain"
-                        loading="lazy" />
+                    <img :src="brand.logoUrl" :alt="brand.name"
+                        class="max-h-16 min-h-16 md:min-h-20 md:max-h-20 object-contain" loading="lazy" />
                 </div>
             </div>
 
-            <p class="text-center text-text mt-12 text-md">
-                Y muchas más. Si no ves tu marca aquí, ¡consúltanos! Lo más probable es que también podamos ayudarte.
+            <p class="text-center font-semibold text-text-muted mt-12 text-md">
+                ¿No ves tu marca aquí? ¡No te preocupes! Podemos ayudarte con prácticamente cualquier marca.
             </p>
         </div>
     </section>

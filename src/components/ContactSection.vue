@@ -1,32 +1,78 @@
 <template>
     <section id="contacto"
-        class="py-16 md:py-24 bg-secondary bg-opacity-10 dark:bg-opacity-20 transition-all scroll-mt-20">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="max-w-2xl mx-auto">
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-primary mb-6">
-                    ¿Listo para Solucionar tus Problemas?
-                </h2>
-                <p class="text-lg text-text mb-10">
-                    No esperes más. Contáctame directamente por WhatsApp para una atención rápida y eficiente.
-                    Estoy aquí para ayudarte con tus equipos de electrónica y refrigeración.
-                </p>
-
-                <div class="mb-8">
-                    <p class="text-text text-xl font-semibold">Teléfono / WhatsApp:</p>
-                    <a :href="whatsappLink" target="_blank"
-                        class="phone text-accent text-2xl md:text-3xl font-bold">
-                        {{ formattedPhoneNumber }}
-                    </a>
+        class="py-20 bg-gradient-to-r from-slate-200 to-slate-300 dark:from-slate-800 dark:to-slate-900 transition-colors duration-300">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+                        ¿Necesitas Ayuda <span class="text-primary">Ahora Mismo?</span>
+                    </h2>
+                    <p class="text-xl text-slate-600 dark:text-slate-300">Contáctame directamente y obtén una respuesta
+                        inmediata</p>
                 </div>
 
-                <a :href="whatsappLink" target="_blank"
-                    class="inline-flex items-center justify-center bg-accent transition-all hover:bg-opacity-80 text-white font-bold py-4 px-10 rounded-lg text-xl shadow-lg transform hover:scale-105">
-                    <ChatBubbleLeftEllipsisIcon class="h-6 w-6 mr-3" aria-hidden="true" />
-                    Enviar Mensaje por WhatsApp
-                </a>
-                <p class="text-text text-sm mt-6">
-                    Atención en <span class="font-semibold">Ciudad Ojeda.</span> ¡Consulta sin compromiso!
-                </p>
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Contact Info -->
+                    <div class="space-y-8 flex flex-col justify-center place-self-center md:place-self-auto">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-gradient-to-r from-primary-500 to-primary-700 p-3 rounded-xl">
+                                <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-sm text-text-muted font-semibold">WhatsApp / Teléfono</div>
+                                <div class="text-2xl font-bold text-primary-500">+58 (414) 659-1611</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-gradient-to-r from-primary-500 to-primary-700 p-3 rounded-xl">
+                                <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-sm text-text-muted font-semibold">Ubicación</div>
+                                <div class="text-xl font-semibold text-text">Ciudad Ojeda,
+                                    Venezuela</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-gradient-to-r from-primary-500 to-primary-700 p-3 rounded-xl">
+                                <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-sm text-text-muted font-semibold">Horario de Atención</div>
+                                <div class="text-xl font-semibold text-text">24/7 Disponible</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div
+                        class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-300 dark:border-slate-700 transition-colors duration-300">
+                        <h3 class="text-2xl font-bold mb-4 text-text">Diagnóstico Gratuito</h3>
+                        <p class="text-slate-600 dark:text-slate-300 mb-6">
+                            Describe tu problema y te daremos una evaluación inicial sin costo
+                        </p>
+                        <a :href="whatsappLink"
+                            class="w-full bg-gradient-to-r from-primary-500 to-primary-700 hover:from-accent-500 hover:to-accent-700 text-white text-sm md:text-lg py-3 md:py-4 flex items-center justify-center space-x-2 rounded-lg transition-all duration-300">
+                            Enviar Mensaje por WhatsApp
+                        </a>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 text-center mt-4">Respuesta garantizada el mismo día</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -60,6 +106,4 @@ const whatsappLink = computed(() => {
 });
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

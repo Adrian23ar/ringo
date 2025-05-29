@@ -10,12 +10,18 @@
 
                 <div class="hidden md:flex items-center space-x-4">
                     <a href="#hero" @click="closeMobileMenu"
-                        class="text-text hover:text-primary px-3 py-2 rounded-md font-medium transition-all">Inicio</a>
+                        class="text-text hover:text-primary px-3 py-2 rounded-md font-semibold transition-all">Inicio</a>
                     <a href="#servicios" @click="closeMobileMenu"
-                        class="text-text hover:text-primary px-3 py-2 rounded-md font-medium transition-all">Servicios</a>
+                        class="text-text hover:text-primary px-3 py-2 rounded-md font-semibold transition-all">Servicios</a>
                     <a href="#contacto" @click="closeMobileMenu"
-                        class="text-text hover:text-primary px-3 py-2 rounded-md font-medium transition-all">Contacto</a>
+                        class="text-text hover:text-primary px-3 py-2 rounded-md font-semibold transition-all">Contacto</a>
                     <DarkModeSwitcher />
+
+                    <a :href="whatsappLink" target="_blank"
+                        class="bg-primary hover:bg-primary-700 text-white text-sm px-3 py-2 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 font-bold">
+                        <span>Whatsapp</span>
+                        <PhoneIcon class="h-4 w-4 text-white" aria-hidden="true" />
+                    </a>
                 </div>
 
                 <div class="flex md:hidden items-center">
@@ -41,20 +47,29 @@
         <div v-show="mobileMenuOpen" class="md:hidden border-t border-secondary" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#hero" @click="closeMobileMenu"
-                    class="text-text hover:bg-secondary hover:text-background block px-3 py-2 rounded-md text-base font-medium transition-all">Inicio</a>
+                    class="text-text hover:bg-secondary hover:text-background block px-3 py-2 rounded-md text-base font-semibold transition-all">Inicio</a>
                 <a href="#servicios" @click="closeMobileMenu"
-                    class="text-text hover:bg-secondary hover:text-background block px-3 py-2 rounded-md text-base font-medium transition-all">Servicios</a>
+                    class="text-text hover:bg-secondary hover:text-background block px-3 py-2 rounded-md text-base font-semibold transition-all">Servicios</a>
                 <a href="#contacto" @click="closeMobileMenu"
-                    class="text-text hover:bg-secondary hover:text-background block px-3 py-2 rounded-md text-base font-medium transition-all">Contacto</a>
+                    class="text-text hover:bg-secondary hover:text-background block px-3 py-2 rounded-md text-base font-semibold transition-all">Contacto</a>
             </div>
         </div>
     </nav>
 </template>
 
-<script setup>
-import { ref } from 'vue';
-import DarkModeSwitcher from './DarkModeSwitcher.vue';
 
+
+<script setup>
+import { ref, computed } from 'vue';
+import DarkModeSwitcher from './DarkModeSwitcher.vue';
+import { PhoneIcon } from '@heroicons/vue/24/solid';
+
+const Tl = "584146591611" // Tu número de teléfono sin el +
+const Ol = "Hola, estoy interesado en sus servicios técnicos. Necesito ayuda con..." // Mensaje predeterminado
+
+const whatsappLink = computed(() => {
+    return `https://wa.me/${Tl}?text=${encodeURIComponent(Ol)}`
+})
 const mobileMenuOpen = ref(false);
 
 const closeMobileMenu = () => {

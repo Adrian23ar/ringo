@@ -5,24 +5,68 @@
 
 @layer base {
   :root {
-    --text: #2D2D2D;                     /* Gris oscuro para texto en modo claro */
-    --background: #f3f3f3;                /* Gris muy claro para fondo en modo claro */
-    --primary: #007ACC;                   /* Azul estándar como primario (ej. botones, enlaces generales) */
-    /* --secondary: #FDB913; */          /* Amarillo/Dorado del logo - COMENTADO O CAMBIADO */
-    --secondary: #E0E0E0;                 /* NUEVO: Gris claro/medio como secundario (para fondos de tarjetas/secciones) */
-    --accent: #00AEEF;                    /* Azul cian/turquesa del icono del logo como acento principal */
+    /* Texto */
+    --text: #2d2d2d;
+    --text-muted: #6c757d; /* Ejemplo: texto secundario o más suave */
+
+    /* Fondo */
+    --background: #f3f3f3;
+    --background-alt: #e9ecef; /* Ejemplo: fondo alternativo o ligeramente diferente */
+
+    /* Primario */
+    --primary-300: #66b2ff; /* Azul más claro */
+    --primary-500: #007acc; /* Azul estándar (tu --primary actual) */
+    --primary-700: #005c99; /* Azul más oscuro */
+
+    /* Secundario */
+    --secondary-300: #f0f0f0; /* Gris más claro */
+    --secondary-500: #e0e0e0; /* Gris claro/medio (tu --secondary actual) */
+    --secondary-700: #c0c0c0; /* Gris más oscuro/marcado */
+
+    /* Acento */
+    --accent-300: #7ff1ff; /* Cian/turquesa más claro */
+    --accent-500: #00aeef; /* Cian/turquesa (tu --accent actual) */
+    --accent-700: #008cbb; /* Azul cian/turquesa del icono del logo como acento principal */
   }
+
   .dark {
-    --text: #EAEAEA;                     /* Gris claro para texto en modo oscuro */
-    --background: #1A1A1A;                /* Gris muy oscuro para fondo en modo oscuro */
-    --primary: #008AE6;                   /* Azul un poco más brillante para modo oscuro */
-    /* --secondary: #FCC43B; */          /* Amarillo/Dorado - COMENTADO O CAMBIADO */
-    --secondary: #3A3A3A;                 /* NUEVO: Gris oscuro como secundario en modo oscuro */
-    --accent: #1BC5FF;                    /* Cian/turquesa un poco más brillante para modo oscuro */
+    /* Texto */
+    --text: #eaeaea;
+    --text-muted: #adb5bd;
+
+    /* Fondo */
+    --background: #1a1a1a;
+    --background-alt: #2c2c2c;
+    /* Primario */
+    --primary-300: #4da6ff; /* Azul claro para modo oscuro */
+    --primary-500: #008ae6; /* Azul (tu --primary actual en dark) */
+    --primary-700: #006bb3; /* Azul oscuro para modo oscuro */
+
+    /* Secundario */
+    --secondary-300: #5a5a5a; /* Gris más claro para modo oscuro */
+    --secondary-500: #3a3a3a; /* Gris oscuro (tu --secondary actual en dark) */
+    --secondary-700: #2a2a2a; /* Gris más oscuro/marcado para modo oscuro */
+
+    /* Acento */
+    --accent-300: #8cf7ff; /* Cian/turquesa más claro para modo oscuro */
+    --accent-500: #1bc5ff; /* Cian/turquesa (tu --accent actual en dark) */
+    --accent-700: #00a3d9; /* Cian/turquesa un poco más brillante para modo oscuro */
   }
 
   body {
     @apply bg-background text-text transition-colors duration-300;
+    font-family: "Inter", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  button,
+  a {
+    font-family: "Poppins", sans-serif;
   }
 
   .phone {
@@ -30,7 +74,7 @@
     position: relative;
     /* Para posicionar el borde con posición absoluta */
   }
-  
+
   .phone::after {
     content: "";
     position: absolute;
@@ -41,7 +85,7 @@
     background-color: var(--accent);
     transition: width 0.2s ease-in-out;
   }
-  
+
   .phone:hover::after {
     width: 97%;
     /* El borde se expande */
