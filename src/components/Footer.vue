@@ -11,7 +11,7 @@
                 </div>
 
                 <div>
-                    <h3 class="font-bold text-slate-800 dark:text-slate-200 mb-4">Servicios</h3>
+                    <h6 class="font-bold text-slate-800 dark:text-slate-200 mb-4">Servicios</h6>
                     <ul class="space-y-2">
                         <li>
                             <button
@@ -41,7 +41,7 @@
                 </div>
 
                 <div>
-                    <h3 class="font-bold text-slate-800 dark:text-slate-200 mb-4">Enlaces Rápidos</h3>
+                    <h6 class="font-bold text-slate-800 dark:text-slate-200 mb-4">Enlaces Rápidos</h6>
                     <ul class="space-y-2">
                         <li>
                             <a href="#hero"
@@ -77,7 +77,7 @@
                 </div>
 
                 <div class="lg:col-span-3 xl:col-span-1">
-                    <h3 class="font-bold text-slate-800 dark:text-slate-200 mb-4">Contacto</h3>
+                    <h6 class="font-bold text-slate-800 dark:text-slate-200 mb-4">Contacto</h6>
                     <ul
                         class="space-y-3 lg:space-y-0 xl:space-y-3 lg:flex xl:flex-col lg:items-center lg:justify-between xl:items-start">
                         <li class="flex items-start gap-3">

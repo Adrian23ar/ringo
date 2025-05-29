@@ -110,7 +110,7 @@
     font-style: normal;
     font-weight: 100 900; /* Rango de pesos soportados por la fuente variable */
     font-display: swap; /* Mejora la carga percibida */
-    src: url("./assets/fonts/Inter/Inter-VariableFont_slnt,wght.ttf")
+    src: url("./assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf")
       format("truetype-variations");
   }
 

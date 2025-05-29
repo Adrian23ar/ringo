@@ -14,7 +14,7 @@
 
         <div class="max-w-2xl mx-auto bg-background-alt shadow-xl rounded-lg border border-secondary-700/30 text-left">
           <div class="p-6 border-b border-secondary-700 dark:border-secondary-300">
-            <h6 class="text-xl font-semibold text-text">Diagnóstico Interactivo</h6>
+            <h2 class="text-xl font-semibold text-text">Diagnóstico Interactivo</h2>
             <p class="text-sm text-text-muted mt-1">
               Conteste unas pocas preguntas para conocer qué podría estar fallando en su equipo.
             </p>
@@ -152,8 +152,8 @@
                       aria-hidden="true" />
                   </div>
                   <div class="ml-3">
-                    <h3 class="text-sm font-medium" :class="getSeverityTextClasses(result.severity)">Diagnóstico
-                      Preliminar</h3>
+                    <p class="text-sm font-medium" :class="getSeverityTextClasses(result.severity)">Diagnóstico
+                      Preliminar</p>
                     <div class="mt-1 text-sm" :class="getSeverityTextClasses(result.severity)">
                       <p>{{ result.title }}</p>
                     </div>
@@ -163,11 +163,11 @@
 
               <div class="space-y-4">
                 <div>
-                  <h4 class="font-medium text-lg text-text">Descripción del Problema</h4>
+                  <p class="font-medium text-lg text-text">Descripción del Problema</p>
                   <p class="text-text-muted mt-1">{{ result.description }}</p>
                 </div>
                 <div>
-                  <h4 class="font-medium text-lg text-text">Recomendación</h4>
+                  <p class="font-medium text-lg text-text">Recomendación</p>
                   <p class="text-text-muted mt-1">{{ result.recommendation }}</p>
                 </div>
                 <div
@@ -177,7 +177,7 @@
                       <CheckCircleIcon class="h-6 w-6" />
                     </div>
                     <div>
-                      <h4 class="font-medium">Siguiente Paso</h4>
+                      <p class="font-medium">Siguiente Paso</p>
                       <p class="mt-1 text-sm">
                         Contáctenos por WhatsApp para agendar una visita técnica. Mencione este diagnóstico para una
                         atención más

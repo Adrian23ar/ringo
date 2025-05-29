@@ -4,9 +4,9 @@
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-12">
-                    <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+                    <h5 class="text-4xl lg:text-5xl font-bold mb-6">
                         ¿Urgencia? Contáctanos <br> <span class="text-primary">Ahora Mismo</span>
-                    </h2>
+                    </h5>
                     <p class="text-xl text-slate-600 dark:text-slate-300">No esperes más. Contáctanos y recibe atención prioritaria para resolver tu problema.</p>
                 </div>
 
@@ -61,7 +61,7 @@
                     <!-- CTA -->
                     <div
                         class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-300 dark:border-slate-700 transition-colors duration-300">
-                        <h3 class="text-2xl font-bold mb-4 text-text">Diagnóstico Gratuito</h3>
+                        <h5 class="text-2xl font-bold mb-4 text-text">Diagnóstico Gratuito</h5>
                         <p class="text-slate-600 dark:text-slate-300 mb-6">
                             Describe tu problema y te daremos una evaluación inicial sin costo
                         </p>
