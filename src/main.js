@@ -1,7 +1,7 @@
 // src/main.js
 import { createApp } from 'vue';
 import App from './App.vue';
-import './main.css'; // Importa tu archivo CSS aquí
+import './assets/main.css'; // Importa tu archivo CSS aquí
 
 // 1. Importa el plugin de partículas y el cargador del motor
 import ParticlesPlugin from '@tsparticles/vue3';

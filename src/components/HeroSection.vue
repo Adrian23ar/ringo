@@ -83,7 +83,6 @@ const particlesOptions = computed(() => {
 
     if (isDarkMode.value) {
         // --- Opciones para MODO OSCURO ---
-        // console.log('Generando opciones para MODO OSCURO');
         return {
             background: {
                 color: { value: '#061428' } // Tu --background-alt en dark mode

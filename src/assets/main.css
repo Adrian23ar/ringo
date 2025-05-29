@@ -58,16 +58,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-display: swap; /* Mejora la carga percibida */
-    src: url("./assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
-  }
-
-  /* Poppins Italic */
-  @font-face {
-    font-family: "Poppins";
-    font-style: italic;
-    font-weight: 400;
-    src: url("./assets/fonts/Poppins/Poppins-Italic.ttf") format("truetype");
+    font-display: swap;
+    src: url("fonts/Poppins/Poppins-Regular.woff2") format("woff2"); /* CORREGIDO */
   }
 
   /* Poppins Bold */
@@ -75,17 +67,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    font-display: swap; /* Mejora la carga percibida */
-    src: url("./assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
-  }
-
-  /* Poppins Bold Italic */
-  @font-face {
-    font-family: "Poppins";
-    font-style: italic;
-    font-weight: 700;
-    font-display: swap; /* Mejora la carga percibida */
-    src: url("./assets/fonts/Poppins/Poppins-BoldItalic.ttf") format("truetype");
+    font-display: swap;
+    src: url("fonts/Poppins/Poppins-Bold.woff2") format("woff2"); /* CORREGIDO */
   }
 
   /* Poppins SemiBold */
@@ -93,38 +76,18 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
-    font-display: swap; /* Mejora la carga percibida */
-    src: url("./assets/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+    font-display: swap;
+    src: url("fonts/Poppins/Poppins-SemiBold.woff2") format("woff2"); /* CORREGIDO */
   }
-
-  /* Poppins Light */
-  @font-face {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap; /* Mejora la carga percibida */
-    src: url("./assets/fonts/Poppins/Poppins-Light.ttf") format("truetype");
-  }
-
-  /* ... y así sucesivamente para todas las variantes de Poppins que descargaste ... */
 
   /* Definición de Inter Variable Font */
   @font-face {
     font-family: "Inter";
     font-style: normal;
-    font-weight: 100 900; /* Rango de pesos soportados por la fuente variable */
-    font-display: swap; /* Mejora la carga percibida */
-    src: url("./assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf")
-      format("truetype-variations");
-  }
-
-  @font-face {
-    font-family: "Inter";
-    font-style: italic;
-    font-weight: 100 900; /* Rango de pesos */
+    font-weight: 100 900;
     font-display: swap;
-    src: url("./assets/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf")
-      format("truetype-variations");
+    src: url("fonts/Inter/Inter-VariableFont_opsz,wght.woff2")
+      format("woff2-variations"); /* CORREGIDO */
   }
 
   body {
