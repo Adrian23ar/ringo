@@ -5,10 +5,9 @@
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-12">
                     <h2 class="text-4xl lg:text-5xl font-bold mb-6">
-                        ¿Necesitas Ayuda <span class="text-primary">Ahora Mismo?</span>
+                        ¿Urgencia? Contáctanos <br> <span class="text-primary">Ahora Mismo</span>
                     </h2>
-                    <p class="text-xl text-slate-600 dark:text-slate-300">Contáctame directamente y obtén una respuesta
-                        inmediata</p>
+                    <p class="text-xl text-slate-600 dark:text-slate-300">No esperes más. Contáctanos y recibe atención prioritaria para resolver tu problema.</p>
                 </div>
 
                 <div class="grid lg:grid-cols-2 gap-12">
@@ -70,7 +69,7 @@
                             class="w-full bg-gradient-to-r from-primary-500 to-primary-700 hover:from-accent-500 hover:to-accent-700 text-white text-sm md:text-lg py-3 md:py-4 flex items-center justify-center space-x-2 rounded-lg transition-all duration-300">
                             Enviar Mensaje por WhatsApp
                         </a>
-                        <p class="text-sm text-slate-500 dark:text-slate-400 text-center mt-4">Respuesta garantizada el mismo día</p>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 text-center mt-4">Atención Rápida Garantizada</p>
                     </div>
                 </div>
             </div>

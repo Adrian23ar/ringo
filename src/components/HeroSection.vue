@@ -158,10 +158,8 @@ const particlesOptions = computed(() => {
                         <span class="text-text">de Equipos</span>
                     </h1>
                     <p class="text-xl text-text leading-relaxed max-w-lg">
-                        <span class="font-bold">Técnico en electrónica</span> y soluciones de Refrigeración. Diagnóstico
-                        profesional y
-                        reparación
-                        garantizada en Ciudad Ojeda.
+                        Expertos en <span class="font-bold">electrónica</span> y refrigeración en Ciudad Ojeda. Soluciones rápidas y garantizadas para
+                        tus electrodomésticos y aires acondicionados.
                     </p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -207,9 +205,9 @@ const particlesOptions = computed(() => {
 "></path>
             </svg></div>
     </section>
-    <section
-        class="bg-gradient-to-r from-cyan-600 to-blue-700 dark:from-cyan-800 dark:to-blue-900 py-4 shadow-md">
-        <div class="container mx-auto flex justify-center md:justify-between items-center flex-wrap gap-4" bis_skin_checked="1">
+    <section class="bg-gradient-to-r from-cyan-600 to-blue-700 dark:from-cyan-800 dark:to-blue-900 py-4 shadow-md">
+        <div class="container mx-auto flex justify-center md:justify-between items-center flex-wrap gap-4"
+            bis_skin_checked="1">
             <div class="flex items-center gap-2 text-white" bis_skin_checked="1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -221,7 +219,7 @@ const particlesOptions = computed(() => {
             </div>
             <a :href="whatsappLink" target="_blank"
                 class="bg-primary hover:bg-primary-700 text-white text-sm px-3 py-2 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 font-semibold">
-                <span>Contactame por Whatsapp!</span>
+                <span>Contáctanos por Whatsapp!</span>
                 <svg class="w-4 h-4" fill="#ffffff" viewBox="-1.66 0 740.824 740.824"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"

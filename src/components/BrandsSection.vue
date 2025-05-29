@@ -6,7 +6,7 @@
                     Trabajamos con Diversas Marcas
                 </h2>
                 <p class="text-lg text-text max-w-2xl mx-auto">
-                    Contamos con experiencia en una amplia gama de marcas líderes en el mercado.
+                    Nuestra experiencia abarca una amplia gama de marcas líderes, asegurando un servicio de calidad para tu equipo.
                 </p>
             </div>
 

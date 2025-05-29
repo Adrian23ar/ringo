@@ -5,13 +5,9 @@
         <div class="container mx-auto px-4 py-10 md:py-12">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                 <div class="space-y-4">
-                    <a class="flex items-center space-x-2">
-                        <img class="h-14 lg:h-12 w-auto" src="../assets/images/LOGO.webp" alt="Rincón Electrónico Logo">
-                    </a>
+                    <img class="h-14 lg:h-12 w-auto" src="../assets/images/LOGO.webp" alt="Rincón Electrónico Logo">
                     <p class="text-slate-800 dark:text-slate-400">
-                        Especialista en diagnóstico y reparación de tarjetas electrónicas para todo tipo de
-                        electrodomésticos.
-                    </p>
+                        Tu Solución <span class="font-semibold">Experta</span>  en Electrodomésticos. </p>
                 </div>
 
                 <div>
@@ -92,15 +88,15 @@
                             <PhoneIcon class="h-5 w-5 text-cyan-500 dark:text-cyan-400 shrink-0" />
                             <span class="text-slate-800 dark:text-slate-200">+58 (414) 659-1611</span>
                         </li>
-                        <li class="flex items-center gap-3">
+                        <!-- <li class="flex items-center gap-3">
                             <EnvelopeIcon class="h-5 w-5 text-cyan-500 dark:text-cyan-400 shrink-0" />
                             <span class="text-slate-800 dark:text-slate-200">contacto@rinconelectronico.com</span>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
 
-            <div class="border-t border-secondary mt-12 pt-6 text-center text-slate-500">
+            <div class="border-t border-secondary mt-12 pt-6 text-center text-text">
                 <p>&copy; {{ currentYear }} Rincón Electrónico. Todos los derechos reservados. Inversiones Ringo C.A.
                 </p>
             </div>

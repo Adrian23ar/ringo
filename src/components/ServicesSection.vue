@@ -6,8 +6,7 @@
           Nuestros Servicios Especializados
         </h2>
         <p class="text-lg text-text max-w-3xl mx-auto">
-          Desde la reparación avanzada de tarjetas electrónicas hasta el mantenimiento integral de tus equipos de
-          refrigeración y electrodomésticos.
+          Reparación avanzada de electrónica y mantenimiento integral para tus equipos de refrigeración y electrodomésticos.
         </p>
       </div>
 
@@ -62,7 +61,7 @@ const services = shallowRef([
   {
     imageUrl: imgElectronica,
     title: 'Electrónica',
-    description: 'Nos especializamos en el diagnóstico y reparación de componentes electrónicos.',
+    description: 'Soluciones expertas en electrónica para tus electrodomésticos.',
     headerGradientClass: 'bg-emerald-950/55',
     buttonColor: 'bg-emerald-600 hover:bg-emerald-700',
     serviceItems: [

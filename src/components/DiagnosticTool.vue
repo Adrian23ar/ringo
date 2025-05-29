@@ -9,14 +9,14 @@
           Diagnóstico Interactivo
         </p>
         <p class="text-base md:text-lg text-text mb-10">
-          Descubra el posible problema de su electrodoméstico en segundos con nuestra herramienta de diagnóstico.
+          Identifique rápidamente qué problema tiene su electrodoméstico con nuestra herramienta interactiva.
         </p>
 
         <div class="max-w-2xl mx-auto bg-background-alt shadow-xl rounded-lg border border-secondary-700/30 text-left">
           <div class="p-6 border-b border-secondary-700 dark:border-secondary-300">
-            <h3 class="text-xl font-semibold text-text">Diagnóstico Interactivo</h3>
+            <h6 class="text-xl font-semibold text-text">Diagnóstico Interactivo</h6>
             <p class="text-sm text-text-muted mt-1">
-              Responda algunas preguntas para obtener un diagnóstico preliminar de su electrodoméstico.
+              Conteste unas pocas preguntas para conocer qué podría estar fallando en su equipo.
             </p>
           </div>
 
@@ -202,7 +202,7 @@
             <div v-if="step < 4">
               <button type="button" @click="handleNext" :disabled="isNextDisabled"
                 class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-accent hover:bg-accent-700 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent disabled:opacity-50 transition-all">
-                {{ step === 3 ? 'Ver Diagnóstico' : 'Siguiente' }}
+                {{ step === 1 ? 'Comenzar diagnóstico' : (step === 2 ? 'Siguiente' : 'Ver Diagnóstico') }}
                 <ArrowRightIcon class="h-4 w-4" />
               </button>
             </div>
@@ -677,26 +677,6 @@ const generateDiagnostic = () => {
   step.value = 4;
 };
 
-// Necesitarás definir las constantes de síntomas que usaste en los fallbacks
-// (refrigeratorSymptoms, washingMachineSymptoms, acSymptoms, dryerSymptoms, microwaveSymptoms, airfryerSymptoms)
-// y las opciones (deviceOptions, problemTimelineOptions) en el ámbito donde esta función se ejecute.
-// También, la función getSymptomsForDevice si decides usarla en el fallback general.
-// Ejemplo de cómo podría ser getSymptomsForDevice:
-/*
-const getSymptomsForDevice = (deviceValue) => {
-  switch (deviceValue) {
-    case 'refrigerator': return refrigeratorSymptoms;
-    case 'washing-machine': return washingMachineSymptoms;
-    case 'ac': return acSymptoms;
-    case 'dryer': return dryerSymptoms;
-    case 'microwave': return microwaveSymptoms;
-    case 'airfryer': return airfryerSymptoms;
-    default: return [];
-  }
-};
-*/
-
-
 const resetDiagnostic = () => {
   step.value = 1;
   deviceType.value = '';
@@ -742,6 +722,7 @@ const getSeverityTextClasses = (severity) => {
       return isDark.value ? "text-slate-300" : "text-slate-700";
   }
 };
+
 const getSeverityIconClasses = (severity) => {
   switch (severity) {
     case "low":
@@ -758,20 +739,6 @@ const getSeverityIconClasses = (severity) => {
 </script>
 
 <style scoped>
-/* Scoped styles can be added here if specific overrides are needed */
-button,
-input[type="radio"]+label {
-  font-family: inherit;
-  /* Or your specific font stack */
-}
-
-/* Mejorar accesibilidad del foco para elementos de opción del custom select */
-div[role="option"]:focus,
-div[role="option"]:hover {
-  /* Tailwind's focus utilities are preferred, but you can enforce here if needed */
-  /* Example: outline: 2px solid var(--primary-500); */
-}
-
 /* El icono de WhatsApp */
 .svg-inline--fa.fa-whatsapp {
   color: white;

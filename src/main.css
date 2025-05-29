@@ -53,6 +53,77 @@
     --accent-700: #00a3d9; /* Cian/turquesa un poco más brillante para modo oscuro */
   }
 
+  /* Poppins Regular */
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  }
+
+  /* Poppins Italic */
+  @font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 400;
+    src: url("./assets/fonts/Poppins/Poppins-Italic.ttf") format("truetype");
+  }
+
+  /* Poppins Bold */
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    src: url("./assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  }
+
+  /* Poppins Bold Italic */
+  @font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 700;
+    src: url("./assets/fonts/Poppins/Poppins-BoldItalic.ttf") format("truetype");
+  }
+
+  /* Poppins SemiBold */
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    src: url("./assets/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  }
+
+
+  /* Poppins Light */
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    src: url("./assets/fonts/Poppins/Poppins-Light.ttf") format("truetype");
+  }
+
+  /* ... y así sucesivamente para todas las variantes de Poppins que descargaste ... */
+
+  /* Definición de Inter Variable Font */
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 100 900; /* Rango de pesos soportados por la fuente variable */
+    font-display: swap; /* Mejora la carga percibida */
+    src: url("./assets/fonts/Inter/Inter-VariableFont_slnt,wght.ttf")
+      format("truetype-variations");
+  }
+
+
+  @font-face {
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 100 900; /* Rango de pesos */
+    font-display: swap;
+    src: url("./assets/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf")
+      format("truetype-variations");
+  }
+
   body {
     @apply bg-background text-text transition-colors duration-300;
     font-family: "Inter", sans-serif;
