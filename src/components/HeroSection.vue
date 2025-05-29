@@ -1,7 +1,6 @@
 <script setup>
 import { computed, ref, onMounted, onUnmounted } from 'vue';
 import { loadSlim } from '@tsparticles/slim';
-import { PhoneIcon } from '@heroicons/vue/24/solid';
 
 // Tu lógica existente de WhatsApp
 const Tl = "584146591611";
@@ -151,7 +150,7 @@ const particlesOptions = computed(() => {
                     <h1 class="text-5xl lg:text-7xl font-bold leading-tight">
                         <span class="text-text">Reparamos</span>
                         <br />
-                        <span class="bg-gradient-to-r from-primary-500 to-primary-300 bg-clip-text text-transparent">
+                        <span class="text-primary">
                             Todo Tipo
                         </span>
                         <br />
@@ -182,7 +181,7 @@ const particlesOptions = computed(() => {
                 <div
                     class="relative bg-gradient-to-br from-slate-200 to-slate-100 dark:from-slate-800 dark:to-slate-700 rounded-3xl p-2 border border-slate-300 dark:border-slate-600 transition-colors duration-300">
                     <img src="../assets/images/hero.webp" alt="Reparación de equipos electrónicos"
-                        class="rounded-2xl w-full h-80 lg:h-[30rem] object-cover" />
+                        class="rounded-2xl w-full h-80 lg:h-[30rem] object-cover" fetchpriority="high" />
                     <div
                         class="absolute -top-4 -right-4 bg-gradient-to-r from-primary-500 to-accent-500 rounded-2xl p-4">
                         <svg class="h-5 w-5 md:h-7 md:w-7 lg:h-8 lg:w-8 text-white" fill="none" stroke="currentColor"
