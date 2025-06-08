@@ -3,8 +3,12 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex items-center">
-                    <a href="#hero" @click="closeMobileMenu" class="flex items-center space-x-2">
-                        <img class="h-14 md:h-16 w-auto" src="../assets/images/LOGO.webp" alt="Rincón Electrónico Logo">
+                    <a href="#hero" @click="closeMobileMenu" class="flex items-center">
+                        <img class="h-14 md:h-16 w-auto block dark:hidden" src="../assets/images/Logo-Dark.webp"
+                            alt="Rincón Electrónico Logo">
+
+                        <img class="h-14 md:h-16 w-auto hidden dark:block" src="../assets/images/Logo-White.webp"
+                            alt="Rincón Electrónico Logo en modo oscuro">
                     </a>
                 </div>
 
@@ -47,11 +51,11 @@
         <div v-show="mobileMenuOpen" class="md:hidden border-t border-secondary" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#hero" @click="closeMobileMenu"
-                    class="text-text hover:bg-secondary hover:text-background block px-3 py-2 rounded-md text-base font-semibold transition-all">Inicio</a>
+                    class="text-text hover:bg-secondary hover:text-text block px-3 py-2 rounded-md text-base font-semibold transition-all">Inicio</a>
                 <a href="#servicios" @click="closeMobileMenu"
-                    class="text-text hover:bg-secondary hover:text-background block px-3 py-2 rounded-md text-base font-semibold transition-all">Servicios</a>
+                    class="text-text hover:bg-secondary hover:text-text block px-3 py-2 rounded-md text-base font-semibold transition-all">Servicios</a>
                 <a href="#contacto" @click="closeMobileMenu"
-                    class="text-text hover:bg-secondary hover:text-background block px-3 py-2 rounded-md text-base font-semibold transition-all">Contacto</a>
+                    class="text-text hover:bg-secondary hover:text-text block px-3 py-2 rounded-md text-base font-semibold transition-all">Contacto</a>
             </div>
         </div>
     </nav>

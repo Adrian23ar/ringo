@@ -4,10 +4,16 @@
         class="bg-background border-t border-secondary border-opacity-20 dark:border-opacity-30 py-4 transition-all">
         <div class="container mx-auto px-4 py-10 md:py-12">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                <div class="space-y-4">
-                    <img class="h-14 lg:h-12 w-auto" src="../assets/images/LOGO.webp" alt="Rincón Electrónico Logo">
-                    <p class="text-slate-800 dark:text-slate-400">
-                        Tu Solución <span class="font-semibold">Experta</span>  en Electrodomésticos. </p>
+                <div class="">
+                    <img class="h-14 lg:h-12 w-auto block dark:hidden" src="../assets/images/Logo-Dark.webp"
+                        alt="Rincón Electrónico Logo">
+
+                    <img class="h-14 lg:h-12 w-auto hidden dark:block" src="../assets/images/Logo-White.webp"
+                        alt="Rincón Electrónico Logo en modo oscuro">
+
+                    <p class="text-slate-800 dark:text-slate-400 mt-2">
+                        Tu Solución <span class="font-semibold">Experta</span> en Electrodomésticos.
+                    </p>
                 </div>
 
                 <div>
