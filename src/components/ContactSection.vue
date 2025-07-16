@@ -61,7 +61,7 @@
                     <!-- CTA -->
                     <div
                         class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-300 dark:border-slate-700 transition-colors duration-300">
-                        <h5 class="text-2xl font-bold mb-4 text-text">Diagnóstico Gratuito</h5>
+                        <p class="text-2xl font-bold mb-4 text-text">Diagnóstico Gratuito</p>
                         <p class="text-slate-600 dark:text-slate-300 mb-6">
                             Describe tu problema y te daremos una evaluación inicial sin costo
                         </p>

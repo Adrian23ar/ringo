@@ -1,0 +1,6 @@
+# Permite el acceso a todos los rastreadores
+User-agent: *
+Disallow:
+
+# Ubicación del sitemap
+Sitemap: https://inversiones-ringo.netlify.app/sitemap.xml
