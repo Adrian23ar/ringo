@@ -20,28 +20,28 @@
                     <h6 class="font-bold text-slate-800 dark:text-slate-200 mb-4">Servicios</h6>
                     <ul class="space-y-2">
                         <li>
-                            <button
+                            <span
                                 class="text-text text-left hover:text-primary-700 dark:text-slate-400 dark:hover:text-slate-200 transition-all duration-100 cursor-default">
                                 Reparación de Tarjetas Electrónicas
-                            </button>
+                            </span>
                         </li>
                         <li>
-                            <button
+                            <span
                                 class="text-text text-left hover:text-primary-700 dark:text-slate-400 dark:hover:text-slate-200 transition-all duration-100 cursor-default">
                                 Refrigeración y Neveras
-                            </button>
+                            </span>
                         </li>
                         <li>
-                            <button
+                            <span
                                 class="text-text text-left hover:text-primary-700 dark:text-slate-400 dark:hover:text-slate-200 transition-all duration-100 cursor-default">
                                 Aires Acondicionados
-                            </button>
+                            </span>
                         </li>
                         <li>
-                            <button
+                            <span
                                 class="text-text text-left hover:text-primary-700 dark:text-slate-400 dark:hover:text-slate-200 transition-all duration-100 cursor-default">
                                 Lavadoras y Secadoras
-                            </button>
+                            </span>
                         </li>
                     </ul>
                 </div>

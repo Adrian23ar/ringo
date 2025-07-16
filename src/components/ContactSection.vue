@@ -4,9 +4,9 @@
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-12">
-                    <h5 class="text-4xl lg:text-5xl font-bold mb-6">
+                    <h2 class="text-4xl lg:text-5xl font-bold mb-6">
                         ¿Urgencia? Contáctanos <br> <span class="text-primary">Ahora Mismo</span>
-                    </h5>
+                    </h2>
                     <p class="text-xl text-slate-600 dark:text-slate-300">No esperes más. Contáctanos y recibe atención prioritaria para resolver tu problema.</p>
                 </div>
 

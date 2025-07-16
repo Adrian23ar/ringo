@@ -2,9 +2,9 @@
     <section id="marcas" class="py-16 bg-secondary/5 dark:bg-secondary/10 transition-all">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 md:mb-16">
-                <h4 class="text-3xl sm:text-4xl font-extrabold text-primary mb-4">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-primary mb-4">
                     Trabajamos con Diversas Marcas
-                </h4>
+                </h2>
                 <p class="text-lg text-text max-w-2xl mx-auto">
                     Nuestra experiencia abarca una amplia gama de marcas líderes, asegurando un servicio de calidad para tu equipo.
                 </p>

@@ -5,9 +5,9 @@
         <p class="text-xs inline-block font-bold bg-accent text-white py-1 px-4 rounded-full mb-2">
           Nuevo
         </p>
-        <p class="text-3xl sm:text-4xl font-bold text-text mb-5">
+        <h2 class="text-3xl sm:text-4xl font-bold text-text mb-5">
           Diagnóstico Interactivo
-        </p>
+        </h2>
         <p class="text-base md:text-lg text-text mb-10">
           Identifique rápidamente qué problema tiene su electrodoméstico con nuestra herramienta interactiva.
         </p>

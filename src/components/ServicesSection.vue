@@ -2,9 +2,9 @@
   <section id="servicios" class="py-16 bg-background-alt transition-all scroll-mt-20">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12 md:mb-16">
-        <h3 class="text-3xl sm:text-4xl font-extrabold text-primary mb-4">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-primary mb-4">
           Nuestros Servicios Especializados
-        </h3>
+        </h2>
         <p class="text-lg text-text max-w-3xl mx-auto">
           Reparación avanzada de electrónica y mantenimiento integral para tus equipos de refrigeración y electrodomésticos.
         </p>
