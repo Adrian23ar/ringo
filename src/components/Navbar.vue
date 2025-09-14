@@ -4,11 +4,23 @@
             <div class="flex items-center justify-between h-20">
                 <div class="flex items-center">
                     <a href="#hero" @click="closeMobileMenu" class="flex items-center">
-                        <img class="h-14 md:h-16 w-auto block dark:hidden" src="../assets/images/Logo-Dark.webp"
-                            alt="Rincón Electrónico Logo">
+                        <img class="h-14 md:h-16 w-auto block dark:hidden" src="../assets/images/Logo-dark-320w.webp"
+                            srcset="../assets/images/Logo-dark-320w.webp 320w,
+             ../assets/images/Logo-dark-480w.webp 480w,
+             ../assets/images/Logo-dark-640w.webp 640w,
+             ../assets/images/Logo-dark-768w.webp 768w,
+             ../assets/images/Logo-dark-912w.webp 912w" sizes="(max-width: 600px) 320px,
+            (max-width: 900px) 480px,
+            912px" alt="Rincón Electrónico Logo">
 
-                        <img class="h-14 md:h-16 w-auto hidden dark:block" src="../assets/images/Logo-White.webp"
-                            alt="Rincón Electrónico Logo en modo oscuro">
+                        <img class="h-14 md:h-16 w-auto hidden dark:block" src="../assets/images/Logo-White-320w.webp"
+                            srcset="../assets/images/Logo-White-320w.webp 320w,
+             ../assets/images/Logo-White-480w.webp 480w,
+             ../assets/images/Logo-White-640w.webp 640w,
+             ../assets/images/Logo-White-768w.webp 768w,
+             ../assets/images/Logo-White-912w.webp 912w" sizes="(max-width: 600px) 320px,
+            (max-width: 900px) 480px,
+            912px" alt="Rincón Electrónico Logo en modo oscuro">
                     </a>
                 </div>
 

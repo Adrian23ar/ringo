@@ -147,16 +147,15 @@ const particlesOptions = computed(() => {
             <div class="space-y-8">
                 <div class="space-y-4">
                     <h1 class="text-5xl lg:text-7xl font-bold leading-tight">
-                        <span class="text-text">Reparamos</span>
+                       <span class="text-text">Técnico en </span> <span class="text-primary">Electrónica</span> en
                         <br />
-                        <span class="text-primary">
-                            Todo Tipo
+                        <span class="text-text">
+                            Ciudad Ojeda
                         </span>
-                        <br />
-                        <span class="text-text">de Equipos</span>
                     </h1>
                     <p class="text-xl text-text leading-relaxed max-w-lg">
-                        Expertos en <span class="font-bold">electrónica</span> y refrigeración en Ciudad Ojeda. Soluciones rápidas y garantizadas para
+                        Expertos en <span class="font-bold">electrónica</span> y refrigeración en Ciudad Ojeda.
+                        Soluciones rápidas y garantizadas para
                         tus electrodomésticos y aires acondicionados.
                     </p>
                 </div>
@@ -179,8 +178,17 @@ const particlesOptions = computed(() => {
             <div class="relative">
                 <div
                     class="relative bg-gradient-to-br from-slate-200 to-slate-100 dark:from-slate-800 dark:to-slate-700 rounded-3xl p-2 border border-slate-300 dark:border-slate-600 transition-colors duration-300">
-                    <img src="../assets/images/hero.webp" alt="Reparación de equipos electrónicos"
-                        class="rounded-2xl w-full h-80 lg:h-[30rem] object-cover" fetchpriority="high" />
+                    <img src="../assets/images/hero-320w.webp" srcset="../assets/images/hero-320w.webp 320w,
+             ../assets/images/hero-480w.webp 480w,
+             ../assets/images/hero-640w.webp 640w,
+             ../assets/images/hero-768w.webp 768w,
+             ../assets/images/hero-1024w.webp 1024w,
+             ../assets/images/hero-1280w.webp 1280w,
+             ../assets/images/hero-1536w.webp 1536w,
+             ../assets/images/hero-1667w.webp 1667w" sizes="(max-width: 640px) 100vw,
+            (max-width: 1024px) 100vw,
+            1667px" alt="Reparación de equipos electrónicos" class="rounded-2xl w-full h-80 lg:h-[30rem] object-cover"
+                        fetchpriority="high" />
                     <div
                         class="absolute -top-4 -right-4 bg-gradient-to-r from-primary-500 to-accent-500 rounded-2xl p-4">
                         <svg class="h-5 w-5 md:h-7 md:w-7 lg:h-8 lg:w-8 text-white" fill="none" stroke="currentColor"

@@ -30,9 +30,6 @@
 import { shallowRef } from 'vue';
 
 const brandsData = [
-    // Reemplaza con los nombres y archivos reales de tus logos
-    // El 'name' es para el 'alt' text y el 'title' del div.
-    // El 'fileName' es el nombre del archivo en 'src/assets/images/brands/'.
     { name: 'Samsung', fileName: 'samsung.webp' },
     { name: 'LG', fileName: 'lg.webp' },
     { name: 'Whirlpool', fileName: 'whirlpool.webp' },
@@ -45,7 +42,6 @@ const brandsData = [
     { name: 'Carrier', fileName: 'carrier.webp' },
     { name: 'TCL', fileName: 'tcl.webp' },
     { name: 'kenmore', fileName: 'kenmore.webp' },
-    // Añade más marcas aquí según sea necesario
 ];
 
 const brands = shallowRef(
@@ -59,8 +55,6 @@ const brands = shallowRef(
             };
         } catch (e) {
             console.warn(`Logo no encontrado para ${brand.fileName}, usando placeholder o ruta directa.`);
-            // Fallback si la imagen no se encuentra o hay error, puedes poner una ruta a un logo genérico
-            // o dejar la ruta tal cual si están en `public` (pero para `src/assets` es mejor `new URL`)
             return {
                 ...brand,
                 logoUrl: `/assets/images/brands/${brand.fileName}` // Ruta como si estuviera en public

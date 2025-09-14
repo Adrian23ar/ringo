@@ -5,11 +5,23 @@
         <div class="container mx-auto px-4 py-10 md:py-12">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                 <div class="">
-                    <img class="h-14 lg:h-12 w-auto block dark:hidden" src="../assets/images/Logo-Dark.webp"
-                        alt="Rincón Electrónico Logo">
+                    <img class="h-14 md:h-16 w-auto block dark:hidden" src="../assets/images/Logo-dark-320w.webp"
+                        srcset="../assets/images/Logo-dark-320w.webp 320w,
+             ../assets/images/Logo-dark-480w.webp 480w,
+             ../assets/images/Logo-dark-640w.webp 640w,
+             ../assets/images/Logo-dark-768w.webp 768w,
+             ../assets/images/Logo-dark-912w.webp 912w" sizes="(max-width: 600px) 320px,
+            (max-width: 900px) 480px,
+            912px" alt="Rincón Electrónico Logo">
 
-                    <img class="h-14 lg:h-12 w-auto hidden dark:block" src="../assets/images/Logo-White.webp"
-                        alt="Rincón Electrónico Logo en modo oscuro">
+                    <img class="h-14 md:h-16 w-auto hidden dark:block" src="../assets/images/Logo-White-320w.webp"
+                        srcset="../assets/images/Logo-White-320w.webp 320w,
+             ../assets/images/Logo-White-480w.webp 480w,
+             ../assets/images/Logo-White-640w.webp 640w,
+             ../assets/images/Logo-White-768w.webp 768w,
+             ../assets/images/Logo-White-912w.webp 912w" sizes="(max-width: 600px) 320px,
+            (max-width: 900px) 480px,
+            912px" alt="Rincón Electrónico Logo en modo oscuro">
 
                     <p class="text-slate-800 dark:text-slate-400 mt-2">
                         Tu Solución <span class="font-semibold">Experta</span> en Electrodomésticos.
@@ -17,7 +29,7 @@
                 </div>
 
                 <div>
-                    <h6 class="font-bold text-slate-800 dark:text-slate-200 mb-4">Servicios</h6>
+                    <p class="font-bold text-slate-800 dark:text-slate-200 mb-4">Servicios</p>
                     <ul class="space-y-2">
                         <li>
                             <span
@@ -47,7 +59,7 @@
                 </div>
 
                 <div>
-                    <h6 class="font-bold text-slate-800 dark:text-slate-200 mb-4">Enlaces Rápidos</h6>
+                    <p class="font-bold text-slate-800 dark:text-slate-200 mb-4">Enlaces Rápidos</p>
                     <ul class="space-y-2">
                         <li>
                             <a href="#hero"
@@ -83,7 +95,7 @@
                 </div>
 
                 <div class="lg:col-span-3 xl:col-span-1">
-                    <h6 class="font-bold text-slate-800 dark:text-slate-200 mb-4">Contacto</h6>
+                    <p class="font-bold text-slate-800 dark:text-slate-200 mb-4">Contacto</p>
                     <ul
                         class="space-y-3 lg:space-y-0 xl:space-y-3 lg:flex xl:flex-col lg:items-center lg:justify-between xl:items-start">
                         <li class="flex items-start gap-3">

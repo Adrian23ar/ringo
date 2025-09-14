@@ -3,10 +3,11 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12 md:mb-16">
         <h2 class="text-3xl sm:text-4xl font-extrabold text-primary mb-4">
-          Nuestros Servicios Especializados
+          Servicios de Electrónica y Refrigeración en Ciudad Ojeda
         </h2>
         <p class="text-lg text-text max-w-3xl mx-auto">
-          Reparación avanzada de electrónica y mantenimiento integral para tus equipos de refrigeración y electrodomésticos.
+          Reparación avanzada de electrónica y mantenimiento integral para tus equipos de refrigeración y
+          electrodomésticos.
         </p>
       </div>
 
@@ -15,11 +16,12 @@
           :class="[
             'rounded-xl shadow-lg overflow-hidden flex flex-col transition-all duration-300 hover:scale-[1.01] hover:shadow-xl col-span-1']">
           <div class="relative p-3 text-white min-h-[180px] md:min-h-[200px] flex flex-col justify-end">
-            <img :src="service.imageUrl" :alt="service.title" class="absolute inset-0 w-full h-full object-cover"
-              loading="lazy" />
+            <img :src="service.imageUrl" :srcset="service.imageSrcset" :sizes="service.imageSizes" :alt="service.title"
+              class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
             <div :class="['absolute inset-0', service.headerGradientClass]"></div>
             <div class="relative z-10 text-center h-full content-center">
-              <h3 class="text-2xl md:text-3xl lg:text-xl xl:text-2xl font-bold mb-1 drop-shadow-lg">{{ service.title }}</h3>
+              <h3 class="text-2xl md:text-3xl lg:text-xl xl:text-2xl font-bold mb-1 drop-shadow-lg">{{ service.title }}
+              </h3>
               <p class="text-sm md:text-base xl:text-base opacity-90 drop-shadow-md">{{ service.description }}</p>
             </div>
           </div>
@@ -53,13 +55,20 @@ import { shallowRef } from 'vue';
 import { ArrowRightIcon, CheckIcon } from '@heroicons/vue/24/solid';
 
 // Importa tus imágenes
-import imgElectronica from '../assets/images/tarjeta.webp';
-import imgRefrigerador from '../assets/images/nevera.webp';
-import imgAire from '../assets/images/aires.webp';
+import imgElectronica320 from '../assets/images/tarjeta-320w.webp';
+import imgElectronica384 from '../assets/images/tarjeta-384w.webp';
+import imgRefrigerador320 from '../assets/images/nevera-320w.webp';
+import imgRefrigerador384 from '../assets/images/nevera-384w.webp';
+import imgAire320 from '../assets/images/aires-320w.webp';
+import imgAire384 from '../assets/images/aires-384w.webp';
 
 const services = shallowRef([
   {
-    imageUrl: imgElectronica,
+    // Usa la imagen más pequeña como src por defecto
+    imageUrl: imgElectronica320,
+    // Define el srcset con las rutas importadas
+    imageSrcset: `${imgElectronica320} 320w, ${imgElectronica384} 384w`,
+    imageSizes: '(max-width: 320px) 320px, 384px', // Ajusta estos valores según tu diseño
     title: 'Electrónica',
     description: 'Soluciones expertas en electrónica para tus electrodomésticos.',
     headerGradientClass: 'bg-emerald-950/55',
@@ -76,7 +85,9 @@ const services = shallowRef([
     ],
   },
   {
-    imageUrl: imgRefrigerador,
+    imageUrl: imgRefrigerador320,
+    imageSrcset: `${imgRefrigerador320} 320w, ${imgRefrigerador384} 384w`,
+    imageSizes: '(max-width: 320px) 320px, 384px', // Ajusta estos valores según tu diseño
     title: 'Refrigeradores y Neveras',
     description: 'Diagnóstico y reparación de neveras y cavas de enfriamiento.',
     headerGradientClass: 'bg-slate-700/55',
@@ -88,14 +99,16 @@ const services = shallowRef([
     ],
   },
   {
-    imageUrl: imgAire,
+    imageUrl: imgAire320,
+    imageSrcset: `${imgAire320} 320w, ${imgAire384} 384w`,
+    imageSizes: '(max-width: 320px) 320px, 384px', // Ajusta estos valores según tu diseño
     title: 'Aires Acondicionados Domesticos E Industriales',
     description: 'Servicio completo para aires acondicionados, asegurando su óptimo funcionamiento.',
     headerGradientClass: 'bg-sky-950/55',
     buttonColor: 'bg-sky-600 hover:bg-sky-700',
     serviceItems: [
       'Diagnóstico de sistemas de aire acondicionados.',
-      'Mantenimiento integral de su equipo de aire acondicionado, ventana, split, gabinetes e integral.',
+      'Mantenimiento integral de su equipo de aire acondicionado, ventana, split, gabinetes e integral.',
       'Reparación de tarjetas electrónicas Inverter.',
       'Instalacion de equipos de aire acondicionado de todo tipo y capacidad.',
       'Recarga de Gas Refrigerante.',
